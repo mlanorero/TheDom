@@ -1,5 +1,5 @@
 //you code here
-let elemImage = document.createElement("img");
-elemImage.src = "http://placehold.it/350x150";
-document.body.innerHTML = "<h1>Hello World</h1>";
-document.querySelector(".myDiv").appendChild(elemImage);
+imagen.innerHTML = "<h1>Hello World</h1>";
+let imagen = document.createElement("img");
+imagen.src = "http://placehold.it/350x150";
+document.body.appendChild(imagen);
