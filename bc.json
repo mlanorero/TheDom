@@ -1,6 +1,6 @@
 {
     "port": 3000,
-    "address": "https://e1837e13-4089-43ee-bee4-44503d41f8f2.ws-us03.gitpod.io",
+    "address": "https://magenta-slug-l7apac7d.ws-us03.gitpod.io",
     "editor": "gitpod",
     "configPath": {
         "config": "bc.json",
@@ -99,7 +99,7 @@
         {
             "slug": "06-Create-DOM-Element-Second",
             "title": "06-Create-DOM-Element-Second",
-            "done": false,
+            "done": true,
             "path": "exercises/06-Create-DOM-Element-Second",
             "translations": [
                 "es",
@@ -110,7 +110,7 @@
         {
             "slug": "07-Create-DOM-list-of-li",
             "title": "07-Create-DOM-list-of-li",
-            "done": false,
+            "done": true,
             "path": "exercises/07-Create-DOM-list-of-li",
             "translations": [
                 "es",

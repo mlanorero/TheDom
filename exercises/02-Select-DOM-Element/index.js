@@ -1,3 +1,2 @@
-//your code here
-let myAlert = document.querySelector("#theTitle");
-alert(myAlert);
+let aux = document.querySelector("#theTitle");
+alert(aux);
