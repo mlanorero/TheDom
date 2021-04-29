@@ -1,7 +1,6 @@
 let button = document.querySelector("#superDuperButton");
+
 button.addEventListener("click", function() {
-	let list = document.createElement("LI");
-	let textnode = document.createTextNode("Forth element");
-	list.appendChild(textnode);
-	document.getElementById("myList").appendChild(list);
+	let node = (document.createElement("li").innerHTML = "Forth Element");
+	document.querySelector("#myList").appendChild(node); // Append <li> to <ul> with id="myList"
 });
