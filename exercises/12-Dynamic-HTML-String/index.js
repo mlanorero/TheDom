@@ -1,3 +1,7 @@
-let text = document.createElement("p");
-text.innerHTML = ", we are in the year";
-document.querySelector("mystring").appendChild(text);
+let today = new Date();
+let year = today.getFullYear();
+//console.log(year);
+
+let mystring = "<p>Hello!</p> <p><strong>My friend</strong>, we are in the year </p>";
+
+document.write(mystring + year);
