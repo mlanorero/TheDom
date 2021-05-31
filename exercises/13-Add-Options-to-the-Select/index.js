@@ -11,9 +11,10 @@ window.onload = function() {
 		node.innerHTML = item;
 	}
 
-	document.getElementById("change").addEventListener("onClick", alert);
+	let p = document.getElementById("change"); // Find the paragraph element in the page
+	p.onclick = showAlert; // Add onclick function to element
 
-	function alert() {
-		document.getElementById("change").innerHTML = "hola";
+	function showAlert(event) {
+		alert(document.getElementById("mySelect").selectedItem);
 	}
 };
