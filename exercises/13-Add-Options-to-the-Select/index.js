@@ -11,10 +11,10 @@ window.onload = function() {
 		node.innerHTML = item;
 	}
 
-	let p = document.getElementById("btn"); // Find the paragraph element in the page
-	p.onclick = showAlert; // Add onclick function to element
+	let p = document.querySelector("#btn");
+	p.onclick = showAlert;
 
-	function showAlert(event) {
+	function showAlert() {
 		alert("hola");
 	}
 };
