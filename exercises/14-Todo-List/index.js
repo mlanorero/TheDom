@@ -1,9 +1,13 @@
 // Your code here
-let button = document.querySelector("#addToDo");
+let input = document.querySelector("#addToDo");
 
-button.addEventListener("click", function() {
-	let node = document.createElement("li");
-	let add = document.getElementById("addToDo").value;
-	let t = document.createTextNode(add);
-	document.querySelector("ul").appendChild(t);
+input.addEventListener("click", function() {
+	let li = document.createElement("li");
+	li.innerHTML = "Tarea Agregada";
+	document.querySelector("ul").appendChild(li);
+
+	let n = document.createElement("i class=fa fa-trash");
+	let span = document.createElement("span");
+	span.appendChild(n);
+	li.appendChild(span);
 });

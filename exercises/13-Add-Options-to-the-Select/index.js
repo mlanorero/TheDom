@@ -9,12 +9,9 @@ window.onload = function() {
 		let node = document.createElement("option");
 		document.querySelector("#mySelect").appendChild(node);
 		node.innerHTML = item;
-	}
 
-	let p = document.querySelector("#btn");
-	p.onclick = showAlert;
-
-	function showAlert() {
-		alert("hola");
+		document.querySelector("#mySelect").addEventListener("change", event => {
+			alert(item);
+		});
 	}
 };
