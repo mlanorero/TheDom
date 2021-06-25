@@ -18,9 +18,9 @@ addToDo.addEventListener("click", function() {
 let span = document.createElement("span");
 
 span.addEventListener("click", function() {
-	let li = document.querySelector("li");
-	let ul = document.querySelector("ul");
-	for (let i = 0; i < ul.length; i++) {
-		return li.remove();
+	let ul = document.getElementsByName("ul");
+	let li = document.getElementsByName("li");
+	for (let i = 0; i < li.length; i++) {
+		ul.removeChild(li[i]);
 	}
 });
