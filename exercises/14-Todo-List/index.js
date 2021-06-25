@@ -1,26 +1,26 @@
 // Your code here
-let input = document.querySelector("#addToDo");
-let close = document.getElementsByClassName("fa-trash");
-let i;
+let addToDo = document.querySelector("#addToDo");
 
-function addEventListener() {
+addToDo.addEventListener("click", function() {
 	let li = document.createElement("li");
 	li.innerHTML = "Tarea Agregada";
 	document.querySelector("ul").appendChild(li);
 
 	let icono = document.createElement("i");
 	let span = document.createElement("span");
-	//var txt = document.createTextNode("/f1f8");
+
 	icono.className = "fa-trash";
-	//i.appendChild(txt);
+
 	span.appendChild(icono);
 	li.appendChild(span);
-	document.querySelector("ul").appendChild(li);
+});
 
-	for (i = 0; i < close.length; i++) {
-		close[i].onclick = function() {
-			let icono = document.querySelector("i");
-			icono.style.display = "none";
-		};
+let span = document.createElement("span");
+
+span.addEventListener("click", function() {
+	let li = document.querySelector("li");
+	let ul = document.querySelector("ul");
+	for (let i = 0; i < ul.length; i++) {
+		return li.remove();
 	}
-}
+});
