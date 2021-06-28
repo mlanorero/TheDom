@@ -15,12 +15,10 @@ addToDo.addEventListener("click", function() {
 	li.appendChild(span);
 });
 
-let span = document.createElement("span");
+let span = document.getElementsByTagName("span");
 
 span.addEventListener("click", function() {
 	let ul = document.getElementsByName("ul");
 	let li = document.getElementsByName("li");
-	for (let i = 0; i < li.length; i++) {
-		ul.removeChild(li[i]);
-	}
+	ul.removeChild(li);
 });
