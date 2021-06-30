@@ -8,11 +8,10 @@ addToDo.addEventListener("click", function() {
 
 	let icono = document.createElement("i");
 	let span = document.createElement("span");
-
-	icono.className = "fa-trash";
-
 	span.appendChild(icono);
 	li.appendChild(span);
+
+	i.classList.add("fa-trash");
 });
 
 let span = document.getElementsByTagName("span");
