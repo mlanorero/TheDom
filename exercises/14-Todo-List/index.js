@@ -1,7 +1,7 @@
 // Your code here
 let addToDo = document.querySelector("#addToDo");
 
-addToDo.addEventListener("click", function() {
+addToDo.addEventListener("onchange", function() {
 	let li = document.createElement("li");
 	li.innerHTML = "Tarea Agregada";
 	document.querySelector("ul").appendChild(li);
@@ -14,10 +14,12 @@ addToDo.addEventListener("click", function() {
 	i.classList.add("fa-trash");
 });
 
-let span = document.getElementsByTagName("span");
+let spans = document.getElementsByTagName("span");
 
-span.addEventListener("click", function() {
-	let ul = document.getElementsByName("ul");
-	let li = document.getElementsByName("li");
-	ul.removeChild(li);
+spans.addEventListener("click", function() {
+	for(let i=0; i < spans.length; i++){
+		let ul = document.getElementsByName("ul");
+		let li = document.getElementsByName("li");
+		ul.removeChild(li);
+	}
 });
