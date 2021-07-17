@@ -1,25 +1,27 @@
-// Your code here
 let addToDo = document.querySelector("#addToDo");
 
-addToDo.addEventListener("onchange", function() {
+addToDo.addEventListener("keyup", function() {
 	let li = document.createElement("li");
 	li.innerHTML = "Tarea Agregada";
 	document.querySelector("ul").appendChild(li);
 
-	let icono = document.createElement("i");
-	let span = document.createElement("span");
-	span.appendChild(icono);
-	li.appendChild(span);
+    let span = document.createElement("span");
+    li.appendChild(span);
 
-	i.classList.add("fa-trash");
-});
+    let icono = document.createElement("i");
+    span.appendChild(icono);
+   
+    
+    icono.classList.add("fa", "fa-trash");
 
-let spans = document.getElementsByTagName("span");
+    
+    // Get the <ul> element with id="myList"
+    let close = document.querySelectorAll("span");
 
-spans.addEventListener("click", function() {
-	for(let i=0; i < spans.length; i++){
-		let ul = document.getElementsByName("ul");
-		let li = document.getElementsByName("li");
-		ul.removeChild(li);
-	}
+    for(let i =0; i < close.length; i++){
+        close[i].addEventListener('click', function(){
+            let ul = document.querySelector("ul");
+            ul.parentNode.removeChild(ul);
+        })
+    }
 });
